@@ -488,7 +488,7 @@ body {
   border: 20px solid black;
   border-radius: 50%;
   transform: translateX(-50%);
-  animation: pokeballMove 1.5s linear alternate-reverse infinite;
+  animation: pokeBallFall 1s, pokeballMove 1.5s linear alternate-reverse infinite;
 
   .white-shadow {
     position: absolute;
@@ -546,6 +546,7 @@ body {
       border: 20px solid black;
       border-radius: 50%;
       transform: translateX(-50%);
+      animation: shine 0.5s 6 linear alternate-reverse;
 
       .inner-circle {
         width: 40px;
@@ -614,3 +615,40 @@ body {
   }
 
 }
+
+@keyframes pokeBallFall {
+  0% {
+    top: 0;
+  }
+
+  20% {
+    top: 109px;
+  }
+
+  40% {
+    top: 95px;
+  }
+
+  60% {
+    top: 106px;
+  }
+
+  80% {
+    top: 92px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-color: #D36152;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
