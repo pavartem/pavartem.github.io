@@ -1,0 +1,495 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 395px;
+  height: 395px;
+  overflow: hidden;
+  background-color: #0A0B1D;
+  border-radius: 50%;
+}
+
+.background-grass {
+  width: 400px;
+  height: 400px;
+}
+.background-grass .background-blade {
+  position: absolute;
+  z-index: 2;
+  background: #01636f;
+}
+.background-grass .background-blade:nth-child(1) {
+  top: 185px;
+  left: -1px;
+  width: 38px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.background-grass .background-blade:nth-child(2) {
+  top: 190px;
+  left: 34px;
+  width: 24px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.background-grass .background-blade:nth-child(3) {
+  top: 210px;
+  left: 56px;
+  width: 37px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.background-grass .background-blade:nth-child(4) {
+  top: 210px;
+  left: 89px;
+  width: 17px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.background-grass .background-blade:nth-child(5) {
+  top: 200px;
+  left: 104px;
+  width: 43px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.background-grass .background-blade:nth-child(6) {
+  top: 180px;
+  left: 270px;
+  width: 47px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.background-grass .background-blade:nth-child(7) {
+  top: 200px;
+  left: 315px;
+  width: 27px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.background-grass .background-blade:nth-child(8) {
+  top: 190px;
+  left: 340px;
+  width: 27px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.background-grass .background-blade:nth-child(9) {
+  top: 180px;
+  left: 365px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.background-grass .background-blade:nth-child(10) {
+  top: 210px;
+  left: 140px;
+  width: 50px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.background-grass .background-blade:nth-child(11) {
+  top: 205px;
+  left: 180px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.background-grass .background-blade:nth-child(12) {
+  top: 215px;
+  left: 210px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.background-grass .background-blade:nth-child(13) {
+  top: 205px;
+  left: 220px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.background-grass .background-blade:nth-child(14) {
+  top: 195px;
+  left: 255px;
+  width: 25px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+
+.middle-grass {
+  width: 400px;
+  height: 400px;
+}
+.middle-grass .middle-blade {
+  position: absolute;
+  z-index: 2;
+  background: #3295ac;
+}
+.middle-grass .middle-blade:nth-child(1) {
+  top: 215px;
+  left: -1px;
+  width: 45px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(2) {
+  top: 205px;
+  left: 40px;
+  width: 30px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(3) {
+  top: 230px;
+  left: 66px;
+  width: 24px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(4) {
+  top: 230px;
+  left: 89px;
+  width: 35px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(5) {
+  top: 220px;
+  left: 115px;
+  width: 50px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(6) {
+  top: 210px;
+  left: 280px;
+  width: 50px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(7) {
+  top: 210px;
+  left: 320px;
+  width: 35px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(8) {
+  top: 220px;
+  left: 350px;
+  width: 20px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(9) {
+  top: 210px;
+  left: 360px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(10) {
+  top: 210px;
+  left: 260px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(11) {
+  top: 220px;
+  left: 240px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(12) {
+  top: 230px;
+  left: 220px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(13) {
+  top: 240px;
+  left: 200px;
+  width: 30px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.middle-grass .middle-blade:nth-child(14) {
+  top: 240px;
+  left: 160px;
+  width: 45px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+
+.foreground-grass {
+  width: 400px;
+  height: 400px;
+}
+.foreground-grass .foreground-blade {
+  position: absolute;
+  z-index: 4;
+  background: #203a43;
+}
+.foreground-grass .foreground-blade:nth-child(1) {
+  top: 230px;
+  left: -1px;
+  width: 20px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(2) {
+  top: 250px;
+  left: 15px;
+  width: 20px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(3) {
+  top: 240px;
+  left: 30px;
+  width: 35px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(4) {
+  top: 250px;
+  left: 60px;
+  width: 35px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(5) {
+  top: 265px;
+  left: 90px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(6) {
+  top: 280px;
+  left: 115px;
+  width: 20px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(7) {
+  top: 275px;
+  left: 130px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(8) {
+  top: 300px;
+  left: 160px;
+  width: 20px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(9) {
+  top: 295px;
+  left: 175px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(10) {
+  top: 300px;
+  left: 210px;
+  width: 15px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(11) {
+  top: 305px;
+  left: 220px;
+  width: 30px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(12) {
+  top: 300px;
+  left: 240px;
+  width: 45px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(13) {
+  top: 280px;
+  left: 260px;
+  width: 30px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(14) {
+  top: 280px;
+  left: 285px;
+  width: 20px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(15) {
+  top: 270px;
+  left: 300px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(16) {
+  top: 250px;
+  left: 320px;
+  width: 40px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(17) {
+  top: 240px;
+  left: 350px;
+  width: 20px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-right-radius: 100px;
+}
+.foreground-grass .foreground-blade:nth-child(18) {
+  top: 250px;
+  left: 350px;
+  width: 45px;
+  height: 300px;
+  border: 3px solid 100px;
+  border-top-left-radius: 100px;
+}
+
+.pokeball {
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  left: 50%;
+  z-index: 3;
+  width: 175px;
+  height: 175px;
+  background-color: white;
+  border: 20px solid black;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: pokeballMove 1.5s linear alternate-reverse infinite;
+}
+.pokeball .top-part {
+  position: relative;
+  top: 0;
+  height: 85px;
+  background-color: #D22B2E;
+  width: 100%;
+  border-bottom: 20px solid black;
+}
+.pokeball .top-part .pokeball-circle {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  border: 20px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pokeball .top-part .pokeball-circle .inner-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+@keyframes pokeballMove {
+  0% {
+    transform: translateX(-41%) rotate(18deg);
+  }
+  10% {
+    transform: translateX(-41%) rotate(18deg);
+  }
+  20% {
+    transform: translateX(-41%) rotate(18deg);
+  }
+  30% {
+    transform: translateX(-44%) rotate(12deg);
+  }
+  40% {
+    transform: translateX(-47%) rotate(6deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(0);
+  }
+  60% {
+    transform: translateX(-53%) rotate(-6deg);
+  }
+  70% {
+    transform: translateX(-56%) rotate(-12deg);
+  }
+  80% {
+    transform: translateX(-59%) rotate(-18deg);
+  }
+  90% {
+    transform: translateX(-59%) rotate(-18deg);
+  }
+  100% {
+    transform: translateX(-59%) rotate(-18deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
