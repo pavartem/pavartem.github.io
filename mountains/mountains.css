@@ -1,0 +1,116 @@
+/* //#4380b6 */
+.mountains {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 400px;
+}
+
+.first-mountain {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 140px 140px 140px;
+    border-style: solid;
+    border-color: transparent transparent #4380b6 transparent;
+}
+
+.second-mountain {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    width: 0;
+    height: 0;
+    border-width: 0 100px 100px 100px;
+    border-style: solid;
+    border-color: transparent transparent #4380b6 transparent;
+}
+
+.third-mountain {
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    width: 0;
+    height: 0;
+    border-width: 0 140px 140px 140px;
+    border-style: solid;
+    border-color: transparent transparent #4380b6 transparent;
+}
+
+.cloud {
+    position: absolute;
+    bottom: 110px;
+    width: 58px;
+    height: 20px;
+    margin: 25px 8px;
+    animation: fly 10s linear alternate infinite;
+    border-radius: 34px;
+    background: #ccc;
+}
+
+.cloud:after,
+.cloud:before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background: #ccc;
+}
+
+.cloud:after {
+    top: -8px;
+    left: 8px;
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+}
+
+.cloud:before {
+    top: -15px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 34px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.second-cloud {
+    margin-left: 150px;
+    animation: fly 8s linear alternate infinite;
+}
+
+.third-cloud {
+    animation: fly 6s linear alternate-reverse infinite;
+}
+
+@keyframes fly {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 30%;
+    }
+}
+
+.sun {
+    position: absolute;
+    bottom: 75px;
+    left: 235px;
+    width: 50px;
+    height: 50px;
+    animation: sunRise 6s linear alternate infinite;
+    border-radius: 50%;
+    background-color: #fcba03;
+}
+
+@keyframes sunRise {
+    0% {
+        bottom: 75px;
+    }
+    100% {
+        bottom: 275px;
+    }
+}

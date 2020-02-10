@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    transition-duration: 2.8s;
+    transition-property: transform;
+    border: 12px solid #3ecfd1;
+    border-radius: 50%;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3ecfd1;
+}
+
+.arrow {
+    position: absolute;
+    left: 10px;
+    width: 36px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #3ecfd1;
+}
+
+.circle .arrow {
+    animation: rotation 2s infinite linear forwards;
+}
+
+.circle:hover .arrow {
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+        transform-origin: 40px;
+    }
+    to {
+        transform: rotate(360deg);
+        transform-origin: 40px;
+    }
+}
