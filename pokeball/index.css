@@ -417,7 +417,7 @@ body {
 
 .pokeball {
   position: relative;
-  top: 100px;
+  top: -1000px;
   left: 50%;
   z-index: 3;
   width: 175px;
@@ -427,7 +427,7 @@ body {
   border: 20px solid black;
   border-radius: 50%;
   transform: translateX(-50%);
-  animation: pokeBallFall 1s, pokeballMove 1.5s linear alternate-reverse infinite;
+  animation: pokeBallFall 1s 2s forwards, pokeballMove 1.5s 2s linear alternate-reverse infinite;
 }
 .pokeball .white-shadow {
   position: absolute;
@@ -482,7 +482,7 @@ body {
   border: 20px solid black;
   border-radius: 50%;
   transform: translateX(-50%);
-  animation: shine 0.3s 7 linear alternate;
+  animation: shine 0.5s 2s 6 linear alternate-reverse;
 }
 .pokeball .top-part .pokeball-circle .inner-circle {
   width: 40px;
@@ -557,11 +557,9 @@ body {
 @keyframes shine {
   0% {
     background-color: #D36152;
-    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
   }
   100% {
     background-color: white;
-    box-shadow: none;
   }
 }
 

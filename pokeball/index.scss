@@ -478,7 +478,7 @@ body {
 
 .pokeball {
   position: relative;
-  top: 100px;
+  top: -1000px;
   left: 50%;
   z-index: 3;
   width: 175px;
@@ -488,7 +488,7 @@ body {
   border: 20px solid black;
   border-radius: 50%;
   transform: translateX(-50%);
-  animation: pokeBallFall 1s, pokeballMove 1.5s linear alternate-reverse infinite;
+  animation: pokeBallFall 1s 2s forwards, pokeballMove 1.5s 2s linear alternate-reverse infinite;
 
   .white-shadow {
     position: absolute;
@@ -546,7 +546,7 @@ body {
       border: 20px solid black;
       border-radius: 50%;
       transform: translateX(-50%);
-      animation: shine 0.5s 6 linear alternate-reverse;
+      animation: shine 0.5s 2s 6 linear alternate-reverse;
 
       .inner-circle {
         width: 40px;
