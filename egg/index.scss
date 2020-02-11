@@ -1,0 +1,249 @@
+body {
+  background-color: #6DBEF8;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.egg {
+  position: relative;
+  top: 30px;
+  z-index: 5;
+  background-color: #F5CB4D;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+
+  .egg-main-part {
+    background-color: #F7D94B;
+    position: relative;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+
+    .bleek {
+      position: absolute;
+      background-color: #fff;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      left: 25px;
+      top: 25px;
+    }
+
+    .large-bleek {
+      position: absolute;
+      background-color: #fff;
+      height: 7px;
+      width: 20px;
+      border-radius: 10px;
+      left: 6px;
+      top: 47px;
+      transform: rotate(-65deg);
+    }
+
+    .full-mouth {
+      height: 30px;
+      width: 30px;
+      background-color: black;
+      position: absolute;
+      bottom: 35px;
+      left: 57px;
+      border-radius: 50%;
+
+      .top-mouth {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #F7D94B;
+      }
+    }
+
+    .cheek {
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background-color: #F1AE67;
+      border-radius: 50%;
+
+      &.first-cheek {
+        bottom: 42px;
+        left: 30px;
+      }
+
+      &.second-cheek {
+        bottom: 41px;
+        right: 19px;
+      }
+    }
+
+    .eye {
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background-color: black;
+      border-radius: 50%;
+      bottom: 60px;
+
+      animation: blink 5s infinite linear forwards;
+
+      &.first-eye {
+        left: 40px;
+      }
+      &.second-eye {
+        left: 90px;
+      }
+    }
+  }
+
+}
+.legs-outter {
+  margin-top: -22px;
+  z-index: 3;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+.legs-wrapper {
+  position: absolute;
+  bottom: -115px;
+  left: 0;
+  display: flex;
+  .leg {
+    z-index: 1;
+    height: 170px;
+    width: 32px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    &.outer-leg {
+      z-index: 4;
+      position: relative;
+      top: 10px;
+      border-radius: 25px;
+      background-color: #6DBEF8;
+      width: 24px;
+      height: 130px;
+    }
+    &.first-leg, &.fourth-leg {
+      height: 120px;
+
+    }
+    &.second-leg, &.third-leg {
+      height: 150px;
+    }
+  }
+}
+
+.shadow {
+  background-color: #5797C7;
+  width: 220px;
+  height: 15px;
+  border-radius: 80%;
+  position: relative;
+  top: 140px;
+  animation: shadowMove 3s infinite linear alternate-reverse forwards;
+}
+
+
+@keyframes blink {
+  0% {
+    height: 15px;
+  }
+  2% {
+    height: 4px;
+  }
+  4% {
+    height: 15px;
+  }
+  6% {
+    height: 4px;
+  }
+  8% {
+    height: 15px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+@keyframes firstLegMove {
+  from {
+    height: 130px;
+  }
+
+  to {
+    height: 150px;
+  }
+}
+
+@keyframes secondLegMove {
+  from {
+    height: 100px;
+  }
+
+  to {
+    height: 160px;
+  }
+}
+
+@keyframes thirdLegMove {
+  from {
+    height: 120px;
+  }
+
+  to {
+    height: 160px;
+  }
+}
+
+@keyframes fourthLegMove {
+  from {
+    height: 120px;
+  }
+
+  to {
+    height: 160px
+  }
+}
+
+@keyframes shadowMove {
+  from {
+    height: 15px;
+  }
+  to {
+    height: 32px;
+  }
+}
+
+.first-leg {
+  animation: firstLegMove 1s infinite linear alternate-reverse forwards;
+}
+
+.second-leg {
+  animation: secondLegMove 1.5s infinite linear alternate-reverse forwards;
+}
+.third-leg {
+  animation: thirdLegMove 1s infinite linear alternate-reverse forwards;
+}
+
+.fourth-leg {
+  animation: fourthLegMove 2s infinite linear alternate-reverse forwards;
+}
